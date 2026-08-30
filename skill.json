@@ -1,0 +1,38 @@
+{
+  "name": "genpark-joint-embedding-predictive-world-representation-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Joint-embedding predictive architecture (JEPA) world representation predicting future visual states directly in latent embedding space.",
+  "author": "genpark",
+  "category": "world-model",
+  "tags": [
+    "v-jepa",
+    "i-jepa",
+    "joint-embedding",
+    "latent-prediction",
+    "self-supervised-learning"
+  ],
+  "inputs": {
+    "video_clip_frames_count": {
+      "type": "integer"
+    },
+    "masked_spatial_regions_count": {
+      "type": "integer"
+    }
+  },
+  "outputs": {
+    "jepa_prediction_id": {
+      "type": "string"
+    },
+    "feature_space_dimension": {
+      "type": "integer"
+    },
+    "physical_world_dynamics_consistency_pct": {
+      "type": "number"
+    },
+    "latent_trajectory_vector_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
